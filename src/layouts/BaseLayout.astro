@@ -1,0 +1,795 @@
+---
+import Productitem from "../components/Productitem.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop.co</title>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-86cd56275caec687041f80b17dc62e32.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css"
+    />
+
+    <!-- modern-normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="container">
+        <section id="title"><div>shop.co</div></section>
+        <section id="links">
+          <ul>
+            <li class="dropdown">
+              <a href="/">Shop <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-content">
+                <li><a href="/shop/category1">Category 1</a></li>
+                <li><a href="/shop/category2">Category 2</a></li>
+                <li><a href="/shop/all">View All </a></li>
+              </ul>
+            </li>
+            <li><a href="/products">On Sale</a></li>
+            <li><a href="/about">New Arrivals</a></li>
+            <li><a href="/contact">Brands</a></li>
+          </ul>
+        </section>
+        <section id="search">
+          <input type="search" placeholder="Search products..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </section>
+        <section id="account-links">
+          <ul>
+            <li>
+              <a href=""
+                ><i class="fa-regular fa-cart-shopping" style="color: #1a0000;"
+                ></i></a
+              >
+            </li>
+            <li>
+              <a href=""></a><i class="fa-solid fa-user" style="color: #1a0000;"
+              ></i>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </nav>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <section id="header-left">
+          <section id="header-title">
+            <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+            <small
+              >Browse through our diverse range of meticulously crafted
+              garments, designed to bring out your individuality and cater to
+              your sense of style.</small
+            >
+            <div><a href="" id="header-title-btn">Shop Now</a></div>
+          </section>
+          <section id="header-stats">
+            <ul>
+              <li>
+                <strong>200+</strong>
+                <small>International Brands</small>
+              </li>
+              <li>
+                <strong>2,000+</strong>
+                <small>High-Quality Products</small>
+              </li>
+              <li>
+                <strong>30,000+</strong>
+                <small>Happy Customers</small>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section id="header-image">
+          <img src="src/img/header/Untitled-2.png" alt="" srcset="" />
+          <img
+            src="src/img/shape/Vector.svg"
+            class="diamond-shape top-righ"
+            alt=""
+          />
+          <img
+            src="src/img/shape/Vector.svg"
+            class="diamond-shape bottom-left"
+            alt=""
+          />
+        </section>
+      </div>
+    </header>
+    <!-- Brands Bar -->
+    <section id="brands">
+      <div class="container">
+        <img src="src/img/brand/versace.png" alt="" />
+        <img src="src/img/brand/zara.png" alt="" />
+        <img src="src/img/brand/gucci.png" alt="" />
+        <img src="src/img/brand/prada.png" alt="" />
+        <img src="src/img/brand/calvinklein.png" alt="" />
+      </div>
+    </section>
+    <!-- New Arrivals -->
+    <section id="new-arrivals">
+      <div class="container">
+        <h2>New Arrivals</h2>
+        <section id="new-arrivals-list">
+          <Productitem
+            name="T-SHIRT WITH TAPE DETAILS"
+            price="120"
+            star="4.5"
+            img="src/img/product/image 7.png"
+          />
+          <Productitem
+            name="SKINNY FIT JEANS"
+            price="240"
+            star="3.1"
+            img="src/img/product/image 8.png"
+          />
+          <Productitem
+            name="CHECKERED SHIRT"
+            price="180"
+            star="4"
+            img="src/img/product/image 9.png"
+          />
+          <Productitem
+            name="SLEEVE STRIPED T-SHIRT"
+            price="130"
+            star="2"
+            img="src/img/product/image 10.png"
+          />
+        </section>
+      </div>
+    </section>
+    <!-- Dress Style -->
+    <section id="dress-style">
+      <div class="container">
+        <h2>Browse By Dress Style</h2>
+        <section id="dress-style-list">
+          <div id="dress-style-list-casual" class="dress-style-list-item">
+            <strong>Casual</strong>
+          </div>
+          <div id="dress-style-list-formal" class="dress-style-list-item">
+            <strong>Formal</strong>
+          </div>
+          <div id="dress-style-list-party" class="dress-style-list-item">
+            <strong>Party</strong>
+          </div>
+          <div id="dress-style-list-gyms" class="dress-style-list-item">
+            <strong>Gyms</strong>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- Reviews -->
+    <section id="reviews">
+      <div class="container">
+        <h2>OUR HAPPY CUSTOMERS</h2>
+        <section id="reviews-items">
+          <section class="review-item">
+            <small> ⭐⭐⭐⭐</small>
+            <h3>Sarah M. ✅</h3>
+            <q
+              >"I'm blown away by the quality and style of the clothes I
+              received from Shop.co. From casual wear to elegant dresses, every
+              piece I've bought has exceeded my expectations.”</q
+            >
+          </section>
+          <section class="review-item">
+            <small> ⭐⭐⭐⭐</small>
+            <h3>Alex K. ✅</h3>
+            <q
+              >"Finding clothes that align with my personal style used to be a
+              challenge until I discovered Shop.co. The range of options they
+              offer is truly remarkable, catering to a variety of tastes and
+              occasions.”</q
+            >
+          </section>
+          <section class="review-item">
+            <small> ⭐⭐⭐⭐</small>
+            <h3>Jessica L. ✅</h3>
+            <q
+              >"Shop.co has become my go-to for stylish and comfortable
+              clothing. Their attention to detail and customer service are truly
+              exceptional. Highly recommended!”</q
+            >
+          </section>
+        </section>
+      </div>
+    </section>
+    <!-- newsletter-->
+    <section id="newsletter">
+      <div class="container">
+        <p>STAY UPTO DATE ABOUT <br /> OUR LATEST OFFERS</p>
+        <form action="">
+          <input type="email" placeholder="Enter your email address" />
+          <button>Subscribe to Newsletter</button>
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <section id="footer-top">
+        <div class="container">
+          <section id="footer-brands">
+            <strong>SHOP.CO</strong>
+            <p>
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+            <section>
+              <a href=""><img src="https://placehold.co/25x25" alt="" /></a>
+              <a href=""><img src="https://placehold.co/25x25" alt="" /></a>
+              <a href=""><img src="https://placehold.co/25x25" alt="" /></a>
+              <a href=""><img src="https://placehold.co/25x25" alt="" /></a>
+            </section>
+          </section>
+          <section id="footer-links">
+            <section class="footer-link">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="">About</a></li>
+                <li><a href=""> Features</a></li>
+                <li><a href="">Works</a></li>
+                <li><a href="">career</a></li>
+              </ul>
+            </section>
+            <section class="footer-link">
+              <h3>HELP</h3>
+              <ul>
+                <li><a href="">Customer Support</a></li>
+                <li><a href="">Delivery Details</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </section>
+            <section class="footer-link">
+              <h3>FAQ</h3>
+              <ul>
+                <li><a href="">Account</a></li>
+                <li><a href="">Manage Deliveries</a></li>
+                <li><a href="">Orders</a></li>
+                <li><a href="">Payments</a></li>
+              </ul>
+            </section>
+            <section class="footer-link">
+              <h3>RESOURCES</h3>
+              <ul>
+                <li><a href="">Free eBooks</a></li>
+                <li><a href="">Development Tutorial</a></li>
+                <li><a href="">How to - Blog</a></li>
+                <li><a href="">Youtube Playlist</a></li>
+              </ul>
+            </section>
+          </section>
+        </div>
+      </section>
+      <section id="footer-bottom">
+        <div class="container">
+          <p>© 2023 Shop.co. All rights reserved.</p>
+          <ul>
+            <li>
+              <a href=""><img src="https://placehold.co/60x30" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="https://placehold.co/60x30" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="https://placehold.co/60x30" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="https://placehold.co/60x30" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="https://placehold.co/60x30" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    nav .container {
+      display: flex;
+      align-items: center;
+      padding: 1.2em 1em;
+      gap: 1em;
+      justify-content: space-between;
+    }
+    #title {
+      font-weight: bold;
+      font-size: 2em;
+      text-transform: uppercase;
+    }
+    #links ul {
+      gap: 1.5em;
+    }
+    #account-links ul {
+      gap: 1em;
+    }
+    #links ul,
+    #account-links ul {
+      display: flex;
+      list-style: none;
+
+      margin: 0;
+      padding: 0;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+    #links ul li a .fas.fa-chevron-down {
+      font-size: 14px; /* ขนาดของไอคอน */
+      margin-left: 4px; /* ระยะห่างทางซ้ายของไอคอน */
+      vertical-align: middle;
+    }
+
+    /* ------------------ CSS สำหรับ Dropdown ใหม่ ------------------ */
+   #links .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+   #links .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      padding: 12px 16px;
+      z-index: 1;
+      border-radius: 8px;
+      gap: 5px;
+      top:1.3em;
+    }
+    #links .dropdown-content li{
+      border-radius: 10px;
+      padding: 0.5em 1em;
+    }
+    #links .dropdown-content li:hover{
+background: rgba(145, 144, 144, 0.086);
+    }
+   #links .dropdown:hover .dropdown-content {
+  display: grid;
+}
+
+    /* ------------------ CSS สำหรับ Dropdown ใหม่ ------------------ */
+    #account-links ul {
+      font-size: 1.3em;
+    }
+    #search {
+      flex-grow: 1;
+      max-width: 560px;
+      position: relative;
+    }
+    #search input {
+      padding: 0.8em 2.6em;
+      background-color: #f0f0f0;
+      border: none;
+      border-radius: 9999px;
+      width: 100%;
+    }
+    .fa-solid.fa-magnifying-glass {
+      font-size: 1.2em;
+      color: #0000004d;
+      position: absolute;
+      left: 14px;
+      top: 29%;
+    }
+    header {
+      background-color: #f2f0f1;
+    }
+    header .container {
+      display: flex;
+      align-items: flex-end;
+      gap: 1em;
+      padding: 0 1em;
+      background-color: #f2f0f1;
+      img {
+        width: 100%;
+      }
+      #header-image {
+        display: flex;
+        flex-basis: 600px; /* บอกให้ Flexbox พยายามให้พื้นที่ 600px */
+        flex-shrink: 0; /* ป้องกันไม่ให้มันหดตัวลง (ถ้าไม่จำเป็น) */
+        position: relative;
+      }
+      #header-image img {
+        width: 100%; /* ให้รูปภาพกว้างเต็มพื้นที่ของ #header-image */
+        max-height: 650px;
+        height: auto; /* รักษาอัตราส่วน */
+      }
+      #header-image .diamond-shape {
+        position: absolute;
+      }
+      #header-image .diamond-shape.top-righ {
+        width: 100px;
+        top: 68px;
+        right: 29px;
+      }
+      #header-image .diamond-shape.bottom-left {
+        width: 60px;
+        bottom: 211px;
+        left: 20px; /* ระยะห่างจากขอบซ้าย */
+      }
+      #header-left {
+        margin-bottom: 3em;
+      }
+      #header-title {
+        h1 {
+          font-size: 3.5em;
+          text-transform: uppercase;
+          margin-top: 0.5em;
+          margin-bottom: 0.3em;
+          font-weight: 900;
+        }
+        small {
+          color: #737272;
+          font-size: 1em;
+        }
+      }
+      #header-title-btn {
+        display: inline-block;
+        background: #1a0000;
+        color: white;
+        border-radius: 99999999px;
+        padding: 1em 3.5em;
+        margin-top: 1.5em;
+        text-decoration: none;
+      }
+      #header-stats {
+        margin-top: 2em;
+        ul {
+          padding: 0;
+          margin: 0;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+        li {
+          list-style-type: none;
+        }
+        li:nth-child(1) {
+          padding-left: 0; /* ตัวแรกไม่มี padding ด้านซ้าย */
+          padding-right: 1em; /* มี padding ด้านขวา */
+        }
+
+        li:not(:first-child) {
+          padding: 0 1em;
+        }
+        li + li {
+          border-left: 2px solid #dedede;
+        }
+        strong {
+          display: inline-block;
+          margin-bottom: 0.12em;
+          font-size: 40px;
+        }
+        small {
+          color: #737272;
+          font-size: 16px;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    #brands {
+      background-color: #000000;
+    }
+    #brands .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      padding: 2.5em 1em;
+      background-color: #000000;
+      justify-content: space-between;
+      img {
+        max-width: 100%;
+        max-height: 35px;
+      }
+    }
+    #new-arrivals .container {
+      padding: 1em;
+      margin-bottom: 2em;
+      h2 {
+        font-size: 48px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+    #new-arrivals-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1em;
+    }
+    #dress-style .container {
+      padding: 1em 3em 2em 3em;
+      background-color: #f2f0f1;
+      border-radius: 2em;
+      h2 {
+        font-size: 48px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+      }
+      #dress-style-list {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 1em;
+      }
+      .dress-style-list-item {
+        border-radius: 0.75em;
+        height: 280px;
+        background-size: cover;
+        background-position: right 0% bottom 99%;
+        strong {
+          display: inline-block;
+          padding: 1em;
+          font-size: 2em;
+        }
+      }
+      #dress-style-list-casual {
+        grid-column: span 3 / span 3;
+        background-image: url("src/img/style/Casual.png");
+            
+      }
+      #dress-style-list-formal {
+        grid-column: span 4 / span 4;
+        background-image: url("src/img/style/Formal.png");
+            
+      }
+      #dress-style-list-party {
+        grid-column: span 4 / span 4;
+        background-image: url("src/img/style/Party.png");
+           
+      }
+      #dress-style-list-gyms {
+        grid-column: span 3 / span 3;
+        background-image: url("src/img/style/Gyms.png");
+         
+      }
+    }
+    #reviews .container {
+      margin-top: 3em;
+      padding: 0 1em;
+      h2 {
+        text-transform: uppercase;
+        font-size: 2em;
+      }
+    }
+    #reviews-items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1em;
+    }
+    .review-item {
+      border: 1px solid #000000;
+      border-radius: 1em;
+      padding: 1em;
+      h3 {
+        margin: 0.5em 0;
+      }
+    }
+    #newsletter .container {
+      margin-top: -2em;
+      transform: translateY(50%);
+      display: flex;
+      background-color: #1a0000;
+      color: white;
+      padding: 2em 3em;
+      border-radius: 1.5em;
+      p {
+        margin: 0;
+        font-size: 2em;
+        flex-grow: 1;
+        font-weight: bold;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        input,
+        button {
+          padding: 0.5em 1em;
+          border-radius: 9999px;
+        }
+      }
+    }
+    footer {
+      padding-top: 7em;
+      background-color: #f0f0f0;
+    }
+    #footer-top .container {
+      display: flex;
+      gap: 2em;
+    }
+    #footer-brands {
+      strong {
+        font-size: 2em;
+        text-transform: uppercase;
+      }
+      p {
+        color: rgb(0, 0, 0, 60%);
+      }
+    }
+    #footer-links {
+      display: grid;
+      flex-grow: 1;
+      grid-template-columns: repeat(4, 1fr);
+      font-size: 0.8em;
+      white-space: nowrap;
+      gap: 1.5em;
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(0, 0, 0, 60%);
+      }
+    }
+    #footer-bottom .container {
+      border-top: 2px solid rgb(0, 0, 0, 10%);
+      margin-top: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      ul {
+        display: flex;
+        gap: 0.5em;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      #links,
+      #search {
+        display: none;
+      }
+      #account-links {
+        margin-left: auto;
+      }
+      header .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      #new-arrivals-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      #dress-style .container #dress-style-list {
+        grid-template-columns: 1fr;
+      }
+      #dress-style .container #dress-style-list #dress-style-list-casual,
+      #dress-style .container #dress-style-list #dress-style-list-formal,
+      #dress-style .container #dress-style-list #dress-style-list-party,
+      #dress-style .container #dress-style-list #dress-style-list-gyms {
+        grid-column: span 1 / span 1;
+      }
+      #reviews-items {
+        grid-template-columns: 1fr;
+      }
+      #newsletter .container {
+        gap: 1.5em;
+        flex-direction: column;
+        margin-top: -4.5em;
+        margin-left: 0.75em;
+        margin-right: 0.75em;
+      }
+      footer {
+        padding-top: 9em;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+      }
+      #footer-top .container {
+        flex-direction: column;
+      }
+      #footer-links {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      #footer-bottom .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      #header-left #header-stats ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8em;
+      }
+      #header-left #header-stats ul li {
+        display: grid;
+      }
+      #header-left #header-stats li:nth-child(3) {
+        border-left: none;
+      }
+      #header-left #header-stats li:nth-child(3) {
+        grid-column: span 2 / span 2;
+        text-align: center;
+      }
+    }
+  </style>
+</html>
