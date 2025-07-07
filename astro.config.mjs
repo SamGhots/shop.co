@@ -3,6 +3,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://SamGhots.github.io/shop.co/',
+    site: 'https://SamGhots.github.io',
   base: 'shop.co',
 });
